@@ -11,6 +11,8 @@ run the install.cmd script for every database - it accepts 3 parameters:
 Example:
 	install.cmd apps/apps@prod UNIX 11i
 
+For new installations - if you receive compilation error, please run the script extra_Grants.sql using sqlplus connected to sys or internal. This script grants select permission on some key system views which are required by the tool.
+
 This script does not need to be run from the server, and you can run it from any PC with an oracle home installed.
 If you insist, I have included also an install.sh, so you can extract the zip file to your unix server, and run it from there.
 
