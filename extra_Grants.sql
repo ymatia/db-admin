@@ -16,3 +16,5 @@ grant all on v_$session to &1;
 grant all on dba_objects to &1;
 grant all on dba_tables to &1;
 grant all on sys.v_$parameter to &1;
+grant all on v_$sort_usage to &1;
+
